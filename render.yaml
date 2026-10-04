@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: ipo-mitra-api
+    runtime: node
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: ADMIN_TOKEN
+        sync: false
